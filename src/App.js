@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import Header from './components/headers/Header.js';
+import DateEs from './components/dates/date.js';
+import DateString from './components/dates/dateString.js';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <p>
+      <DateEs/>
+      </p>
+      <p>
+
+      <DateString/>
+      </p>
     </div>
   );
 }
